@@ -110,7 +110,7 @@ const menuItems = [
 <style scoped>
 .nav-link::after {
     content: '';
-    @apply absolute -bottom-1 left-0 w-0 h-[1px] bg-brand-primary transition-all duration-300;
+    @apply absolute -bottom-1 left-0 w-0 h-[2px] bg-brand-accent transition-all duration-300 rounded-full;
 }
 .nav-link:hover::after {
     @apply w-full;
