@@ -1,5 +1,5 @@
 <script setup>
-import { Linkedin, Instagram, GraduationCap, Sparkles } from 'lucide-vue-next' // Troquei Quote por Sparkles para ficar mais jovem
+import { Linkedin, Instagram, GraduationCap, Sparkles } from 'lucide-vue-next'
 
 const profile = {
     name: 'Júlia Paim',
@@ -7,10 +7,11 @@ const profile = {
     reg: 'CRP 03/12345',
     bio: [
         'Oi! Eu sou a Júlia. Minha missão é traduzir o mundo dos sentimentos para uma linguagem que faz sentido.',
-        'Para os pais, ofereço suporte e orientação. Para você (criança ou teen), ofereço um espaço livre de julgamentos para falar sobre escola, amigos, medos e sonhos.'
+        // NOVO PARÁGRAFO SOBRE TCC:
+        'Trabalho com a Terapia Cognitivo-Comportamental (TCC). Isso significa que nossas sessões são dinâmicas: usamos jogos, desenhos e desafios práticos para entender como seus pensamentos influenciam o que você sente.',
+        'Para os pais, ofereço orientação segura. Para você (criança ou teen), um espaço livre de julgamentos para falar sobre escola, amigos, medos e sonhos.'
     ],
     quote: 'Crescer pode ser desafiador, mas você não precisa ir sozinho.',
-    // Tags mais modernas e diretas
     specialties: ['Ansiedade de Prova', 'Timidez & Amigos', 'Vício em Telas', 'Autoestima', 'Conflitos Familiares'],
     img: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1200&auto=format&fit=crop', 
     social: { linkedin: '#', instagram: '#' }
@@ -38,7 +39,7 @@ const profile = {
                         </div>
                         <div>
                             <p class="font-display font-bold text-brand-dark text-xs">Especialista</p>
-                            <p class="text-[10px] text-gray-500 uppercase tracking-wide">Infantojuvenil</p>
+                            <p class="text-[10px] text-gray-500 uppercase tracking-wide">TCC & Infanto</p>
                         </div>
                     </div>
                 </div>
