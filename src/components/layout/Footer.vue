@@ -81,7 +81,7 @@ const scrollToTop = () => {
             </div>
         </div>
 
-        <div class="border-t border-white/5 bg-[#233224]">
+        <div class="border-t border-white/5">
             <div class="container mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
 
                 <div class="font-body text-xs text-brand-light/40">

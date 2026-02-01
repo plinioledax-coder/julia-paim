@@ -60,8 +60,6 @@ onUnmounted(() => window.removeEventListener('mousemove', handleMouseMove))
               preserveAspectRatio="none">
               <path d="M0 5 Q 50 10 100 5" stroke="currentColor" stroke-width="6" fill="none" stroke-linecap="round" />
             </svg>
-            <Star
-              class="absolute -top-4 -right-6 w-5 h-5 text-brand-accent fill-brand-accent animate-bounce-slow opacity-80" />
           </span>
         </h1>
 

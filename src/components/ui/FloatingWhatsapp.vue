@@ -1,42 +1,32 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
+// Removi a importação do Lucide pois usaremos o SVG direto
 
-const phone = '5571997160510'
-const message = encodeURIComponent('Olá! Visitei o site da A2F Arquitetura e gostaria de solicitar um orçamento.')
+const phone = '5571999999999' // Seu número
+const message = encodeURIComponent('Olá Júlia! Visitei seu site e gostaria de saber mais sobre o atendimento.')
 const link = `https://wa.me/${phone}?text=${message}`
 
 const visible = ref(false)
-const isDarkSection = ref(true) // Começa true porque o Hero é escuro
+const isDarkSection = ref(false) 
 
-// CONFIGURAÇÃO DE CONTRASTE
-// Liste aqui os IDs das seções que têm fundo CLARO (Branco/Off-white)
-// Nessas seções, o botão ficará ESCURO (Verde Musgo Profundo)
-const lightSections = ['sobre', 'servicos', 'projetos', 'team', 'contato']
+// IDs das seções com fundo ESCURO ou AZUL
+const darkSections = ['depoimentos', 'footer'] 
 
 const handleScroll = () => {
   const scrollY = window.scrollY
-  
-  // 1. Visibilidade (aparece depois de 100px)
   visible.value = scrollY > 100
 
-  // 2. Lógica de Cor Dinâmica
   const sections = document.querySelectorAll('section, header, footer')
-  
-  // Posição do gatilho (aprox. onde o botão fica na tela)
   const buttonPosition = window.innerHeight - 80
 
   sections.forEach(section => {
     const rect = section.getBoundingClientRect()
-    
-    // Verifica se este é o elemento que está "atrás" do botão agora
     if (rect.top <= buttonPosition && rect.bottom >= buttonPosition) {
       const sectionId = section.id
-      
-      // Se a seção atual for clara, botão escuro. Se for escura, botão claro.
-      if (lightSections.includes(sectionId)) {
-        isDarkSection.value = false // Botão vira Verde Escuro
+      if (darkSections.includes(sectionId)) {
+        isDarkSection.value = true 
       } else {
-        isDarkSection.value = true  // Botão vira Salmão
+        isDarkSection.value = false
       }
     }
   })
@@ -53,7 +43,7 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
       :href="link"
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Atendimento via WhatsApp"
+      aria-label="Falar com a Psicóloga via WhatsApp"
       class="
         group
         fixed
@@ -64,35 +54,34 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
         z-50
         w-14
         h-14
-        rounded-[14px]
+        rounded-full
         flex
         items-center
         justify-center
         transition-all
         duration-500
-        hover:scale-[1.05]
-        shadow-2xl
+        hover:scale-110
+        hover:-rotate-3
+        shadow-xl
         border-2
-        border-white/20
+        border-white/40
       "
-      :class="isDarkSection ? 'variant-bright' : 'variant-dark'"
+      :class="isDarkSection ? 'variant-pink' : 'variant-blue'"
     >
       
       <span
-        class="absolute inset-0 rounded-[14px] opacity-0 group-hover:opacity-100 transition duration-500 animate-pulse"
-        :class="isDarkSection ? 'bg-[#C87D70]/40' : 'bg-[#2C3E2D]/40'"
-        style="transform: scale(1.3);"
+        class="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition duration-500 animate-pulse-slow"
+        :class="isDarkSection ? 'bg-brand-accent/40' : 'bg-brand-primary/30'"
+        style="transform: scale(1.4);"
       />
 
-      <svg
-        viewBox="0 0 32 32"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        class="relative w-7 h-7 transition-transform duration-300 group-hover:rotate-12"
+      <svg 
+        class="w-8 h-8 relative transition-transform duration-300 group-hover:scale-110" 
+        viewBox="0 0 24 24" 
+        fill="currentColor" 
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <path d="M16 3C9.4 3 4 8 4 14.5c0 2.7 1 5.2 2.7 7.2L6 29l7.6-2.5c.7.2 1.6.3 2.4.3 6.6 0 12-5 12-11.5S22.6 3 16 3z"/>
-        <path d="M12.7 10.7c-.3-.7-.6-.7-.9-.7h-.8c-.3 0-.7.1-1 .4-.4.4-1.3 1.3-1.3 3.2s1.3 3.7 1.5 4c.2.3 2.5 4 6.2 5.4 3 1.2 3.6 1 4.3.9.7-.1 2.2-.9 2.5-1.7.3-.8.3-1.5.2-1.7-.1-.2-.3-.3-.6-.5l-2.1-1c-.3-.1-.6-.2-.8.2-.2.4-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.1-1.5-.6-2.8-1.8-1-1-1.7-2.3-1.9-2.6-.2-.3 0-.5.1-.6.2-.2.3-.4.5-.6.2-.2.3-.4.4-.6.1-.2 0-.4 0-.6l-.9-2.2z"/>
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
       </svg>
 
       <span
@@ -101,11 +90,11 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
           right-16
           whitespace-nowrap
           text-xs
-          tracking-[0.2em]
+          tracking-widest
           uppercase
           px-4
           py-2
-          rounded-sm
+          rounded-xl
           opacity-0
           translate-x-4
           group-hover:opacity-100
@@ -114,40 +103,37 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
           duration-300
           font-bold
           shadow-lg
+          border
+          border-white/20
         "
         :class="isDarkSection 
-          ? 'bg-[#C87D70] text-white' 
-          : 'bg-[#2C3E2D] text-white'"
+          ? 'bg-brand-accent text-brand-dark' 
+          : 'bg-brand-primary text-white'"
       >
-        Fale Conosco
+        Falar com Júlia
       </span>
     </a>
   </transition>
 </template>
 
 <style scoped>
-/* VARIANTE 1: Para fundos escuros (Hero, Depoimentos, Footer) */
-/* Botão SALMÃO para acender no verde */
-.variant-bright {
-  background: #C87D70;
-  color: white; 
+/* VARIANTE 1: Fundos CLAROS -> Botão AZUL */
+.variant-blue {
+  @apply bg-brand-primary text-white shadow-brand-primary/30;
 }
 
-/* VARIANTE 2: Para fundos claros (Sobre, Serviços, Projetos...) */
-/* Botão VERDE ESCURO para contrastar no branco */
-.variant-dark {
-  background: #2C3E2D;
-  color: #F9F8F6; /* Off-white */
+/* VARIANTE 2: Fundos ESCUROS -> Botão ROSA (ícone ficará 'brand-dark' pelo currentColor) */
+.variant-pink {
+  @apply bg-brand-accent text-brand-dark shadow-brand-accent/30;
 }
 
-/* ANIMAÇÃO DE ENTRADA */
 .fade-slide-enter-active,
 .fade-slide-leave-active {
-  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 .fade-slide-enter-from,
 .fade-slide-leave-to {
   opacity: 0;
-  transform: translateY(20px) scale(0.8);
+  transform: translateY(20px) scale(0.5);
 }
 </style>

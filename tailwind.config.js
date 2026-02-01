@@ -7,39 +7,39 @@ export default {
   theme: {
     extend: {
       // 1. TIPOGRAFIA
-      // Mantivemos as fontes pois funcionam bem: 
-      // Montserrat (geométrica, moderna, agrada teens) + Manrope (legibilidade).
       fontFamily: {
         display: ['Montserrat', 'sans-serif'], 
         body: ['Manrope', 'sans-serif'],
       },
       
-      // 2. NOVA PALETA DE CORES (Foco: 8-15 anos + Pais)
+      // 2. PALETA "KINDNESS & COMFORT" (Azul + Rosa Modernos)
       colors: {
         brand: {
-          // Verde "Fresh": Menos musgo, mais vivo. 
-          // Passa a ideia de crescimento e saúde mental sem ser hospitalar.
-          primary: '#588157', 
+          // Primary (Steel Blue): 
+          // Um azul médio, levemente acinzentado. 
+          // Passa confiança sem ser "corporativo" e calma sem ser "sonífero".
+          // Ótimo contraste para botões com texto branco.
+          primary: '#5784BA', 
           
-          // Dark "Deep Forest": Substitui o preto. 
-          // É sério o suficiente para os pais, mas suave para leitura.
-          dark: '#1A2C22',    
+          // Dark (Charcoal Blue): 
+          // Um cinza escuro azulado para textos. 
+          // Muito mais suave aos olhos que o preto.
+          dark: '#2D3748',    
           
-          // Laranja "Energy": A MUDANÇA PRINCIPAL.
-          // Vibrante, estimulante e criativo. Conecta com a linguagem jovem/teen
-          // e quebra a monotonia do site. Ótimo para CTAs.
-          accent: '#FF9F1C',  
+          // Accent (Dusty Rose): 
+          // AQUI ESTÁ O TRUQUE. Não é "pink", é um rosa "poeira" ou "blush".
+          // É sofisticado, acolhedor e conversa bem com o público teen.
+          accent: '#F2A3B3',  
           
-          // Cream: Mantemos o fundo off-white para conforto visual (leitura em telas).
-          light: '#FDFBF7',   
+          // Light (Soft Cloud): 
+          // Um off-white com um pingo de azul, para integrar tudo.
+          light: '#F7FAFC',   
           
           white: '#FFFFFF',
         }
       },
 
-      // 3. ANIMAÇÕES 
-      // Mantidas e essenciais. O movimento (blobs, slides) retém a atenção 
-      // de mentes mais jovens que tendem a ser mais visuais/interativas.
+      // 3. ANIMAÇÕES
       animation: {
         'blob': 'blob 10s infinite',
         'slide-up': 'slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',

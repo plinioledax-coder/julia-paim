@@ -30,9 +30,9 @@ onUnmounted(() => {
 })
 
 const menuItems = [
-  { label: 'Sobre Mim', href: '#sobre' },
-  { label: 'Áreas de Atuação', href: '#servicos' },
-  { label: 'Como Funciona', href: '#faq' },
+  { label: 'SOBRE MIM', href: '#sobre' },
+  { label: 'ÁREAS DE ATUAÇÃO', href: '#servicos' },
+  { label: 'COMO FUNCIONA', href: '#faq' },
 ]
 </script>
 
