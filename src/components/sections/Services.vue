@@ -5,22 +5,22 @@ const services = [
     {
         icon: BookOpen,
         title: 'Escola & Foco',
-        desc: 'Dificuldades de aprendizado, pressão por notas e organização dos estudos.'
+        desc: 'Dificuldades de aprendizagem, ansiedade de desempenho e desenvolvimento de estratégias de organização e autorregulação dos estudos.'
     },
     {
         icon: Gamepad2,
         title: 'Mundo Digital',
-        desc: 'Equilíbrio saudável entre telas, jogos e a vida real fora do quarto.'
+        desc: 'Identificação e manejo do uso problemático de telas e jogos, promovendo equilíbrio entre o ambiente virtual e as relações presenciais.'
     },
     {
         icon: SmilePlus,
         title: 'Emoções & Ansiedade',
-        desc: 'Aprender a lidar com o "frio na barriga", medos e mudanças de humor.'
+        desc: 'Reconhecimento e regulação emocional diante de ansiedade, medos e oscilações de humor ao longo do desenvolvimento.'
     },
     {
         icon: HeartHandshake,
         title: 'Habilidades Sociais',
-        desc: 'Vencer a timidez, fazer amigos e lidar com bullying ou conflitos.'
+        desc: 'Desenvolvimento de repertório social, ampliação da capacidade de se relacionar e construção de vínculos saudáveis.'
     }
 ]
 </script>
