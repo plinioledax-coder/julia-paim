@@ -12,7 +12,7 @@ const profile = {
         'Para os pais, ofereço orientação clara e acolhedora. Para as crianças e teens, um lugar sem julgamentos para falar sobre escola, amigos, medos e tudo que pesa.'
     ],
     quote: 'Crescer pode ser difícil. Mas com apoio, fica mais leve.',
-    specialties: ['Ansiedade de Prova', 'Timidez & Amigos', 'Vício em Telas', 'Autoestima', 'Conflitos Familiares'],
+    specialties: ['Ansiedade', 'Timidez', 'Vício em Telas', 'Autoestima', 'Conflitos Familiares', 'Mudanças de Comportamento', 'Problemas Emocionais e Sociais'],
     img: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1200&auto=format&fit=crop', 
     social: { linkedin: '#', instagram: '#' }
 }
