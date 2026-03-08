@@ -79,19 +79,41 @@ const services = [
                     </div>
 
                     <p class="font-body text-brand-dark/70 text-base md:text-lg leading-relaxed">
-                        Sou especialista em <strong>Terapia Cognitivo-Comportamental</strong>. É uma abordagem prática e focada no presente. 
-                        Diferente de apenas "conversar", na TCC ensinamos a criança/adolescente a se tornar seu próprio terapeuta.
+                        A Terapia Cognitivo-Comportamental é uma das abordagens mais estudadas e validadas cientificamente para o tratamento de crianças e adolescentes.
+Na prática, isso significa sessões com propósito: ajudamos seu filho a identificar como os pensamentos influenciam emoções e comportamentos — e a desenvolver autonomia para lidar com os desafios do dia a dia.
+O objetivo não é apenas resolver o que incomoda agora, mas construir ferramentas que ele vai carregar para a vida.
                     </p>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
                         <div class="flex items-start gap-3 text-left">
                             <CheckCircle2 class="w-5 h-5 text-brand-accent shrink-0 mt-0.5" />
-                            <p class="text-sm font-medium text-brand-dark/80">Entender como pensamentos afetam emoções.</p>
+                            <p class="text-sm font-medium text-brand-dark/80">Entender como pensamentos afetam emoções e comportamentos.</p>
+                        </div>
+                        <div class="flex items-start gap-3 text-left">
+                            <CheckCircle2 class="w-5 h-5 text-brand-accent shrink-0 mt-0.5" />
+                            <p class="text-sm font-medium text-brand-dark/80">Desenvolver autonomia e capacidade de resolução de problemas.</p>
                         </div>
                         <div class="flex items-start gap-3 text-left">
                             <CheckCircle2 class="w-5 h-5 text-brand-accent shrink-0 mt-0.5" />
                             <p class="text-sm font-medium text-brand-dark/80">Desenvolver autonomia e resolução de problemas.</p>
                         </div>
+                        <div class="flex items-start gap-3 text-left">
+                            <CheckCircle2 class="w-5 h-5 text-brand-accent shrink-0 mt-0.5" />
+                            <p class="text-sm font-medium text-brand-dark/80">Identificar padrões de pensamento que geram sofrimento.</p>
+                        </div>
+                        <div class="flex items-start gap-3 text-left">
+                            <CheckCircle2 class="w-5 h-5 text-brand-accent shrink-0 mt-0.5" />
+                            <p class="text-sm font-medium text-brand-dark/80">Construir estratégias práticas para lidar com situações desafiadoras.</p>
+                        </div>
+                        <div class="flex items-start gap-3 text-left">
+                            <CheckCircle2 class="w-5 h-5 text-brand-accent shrink-0 mt-0.5" />
+                            <p class="text-sm font-medium text-brand-dark/80">Ampliar o repertório emocional e social.</p>
+                        </div>
+                        <div class="flex items-start gap-3 text-left">
+                            <CheckCircle2 class="w-5 h-5 text-brand-accent shrink-0 mt-0.5" />
+                            <p class="text-sm font-medium text-brand-dark/80">Ampliar o repertório emocional e social.</p>
+                        </div>
+                        
                     </div>
                 </div>
 
