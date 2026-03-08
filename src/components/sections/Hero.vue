@@ -48,7 +48,7 @@ onUnmounted(() => window.removeEventListener('mousemove', handleMouseMove))
           class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-brand-primary/10 shadow-sm transform hover:scale-105 transition-transform duration-300 cursor-default">
           <Smile class="w-3.5 h-3.5 text-brand-accent" />
           <span class="font-display text-[10px] font-bold tracking-[0.15em] text-brand-dark uppercase">
-            Especialista em Teens (5 a 17 anos)
+            Especialista em Crianças e Adolescentes (5 a 17 anos)
           </span>
         </div>
 
