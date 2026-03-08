@@ -39,7 +39,7 @@ const profile = {
                         </div>
                         <div>
                             <p class="font-display font-bold text-brand-dark text-xs">Especialista</p>
-                            <p class="text-[10px] text-gray-500 uppercase tracking-wide">TCC & Infanto</p>
+                            <p class="text-[10px] text-gray-500 uppercase tracking-wide">TCC & Infanto Juvenil</p>
                         </div>
                     </div>
                 </div>
