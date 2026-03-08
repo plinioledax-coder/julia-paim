@@ -11,7 +11,7 @@ const profile = {
         'Trabalho com a Terapia Cognitivo-Comportamental (TCC), uma abordagem prática e baseada em evidências. Nossas sessões são dinâmicas: usamos jogos, desenhos e desafios do dia a dia para ajudar seu filho a entender como os pensamentos influenciam o que ele sente — e o que pode fazer diferente.',
         'Para os pais, ofereço orientação clara e acolhedora. Para as crianças e teens, um lugar sem julgamentos para falar sobre escola, amigos, medos e tudo que pesa.'
     ],
-    quote: 'Crescer pode ser difícil. Mas com o apoio, fica mais leve.',
+    quote: 'Crescer pode ser difícil. Mas com apoio, fica mais leve.',
     specialties: ['Ansiedade de Prova', 'Timidez & Amigos', 'Vício em Telas', 'Autoestima', 'Conflitos Familiares'],
     img: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1200&auto=format&fit=crop', 
     social: { linkedin: '#', instagram: '#' }
