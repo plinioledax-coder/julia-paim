@@ -6,12 +6,12 @@ const profile = {
     role: 'Psicóloga Infantojuvenil',
     reg: 'CRP 03/12345',
     bio: [
-        'Oi! Eu sou a Júlia. Minha missão é traduzir o mundo dos sentimentos para uma linguagem que faz sentido.',
+        'Oi! Eu sou a Júlia. Acredito que cuidar de uma criança ou adolescente vai muito além de técnicas — é sobre criar um espaço seguro onde ele possa ser exatamente quem é.',
         // NOVO PARÁGRAFO SOBRE TCC:
-        'Trabalho com a Terapia Cognitivo-Comportamental (TCC). Isso significa que nossas sessões são dinâmicas: usamos jogos, desenhos e desafios práticos para entender como seus pensamentos influenciam o que você sente.',
-        'Para os pais, ofereço orientação segura. Para você (criança ou teen), um espaço livre de julgamentos para falar sobre escola, amigos, medos e sonhos.'
+        'Trabalho com a Terapia Cognitivo-Comportamental (TCC), uma abordagem prática e baseada em evidências. Nossas sessões são dinâmicas: usamos jogos, desenhos e desafios do dia a dia para ajudar seu filho a entender como os pensamentos influenciam o que ele sente — e o que pode fazer diferente.',
+        'Para os pais, ofereço orientação clara e acolhedora. Para as crianças e teens, um lugar sem julgamentos para falar sobre escola, amigos, medos e tudo que pesa.'
     ],
-    quote: 'Crescer pode ser desafiador, mas você não precisa ir sozinho.',
+    quote: 'Crescer pode ser difícil. Mas com o apoio certo, fica mais leve.',
     specialties: ['Ansiedade de Prova', 'Timidez & Amigos', 'Vício em Telas', 'Autoestima', 'Conflitos Familiares'],
     img: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1200&auto=format&fit=crop', 
     social: { linkedin: '#', instagram: '#' }
