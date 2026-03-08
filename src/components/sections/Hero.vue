@@ -64,8 +64,7 @@ onUnmounted(() => window.removeEventListener('mousemove', handleMouseMove))
         </h1>
 
         <p class="font-body text-base lg:text-lg text-brand-dark/70 font-medium leading-relaxed max-w-lg">
-          Transforme a confusão em clareza. Apoio especializado para seu filho entender as próprias emoções, vencer a
-          ansiedade e superar conflitos. </p>
+          Um espaço onde o afeto e a ciência caminham juntos — para que seu filho entenda as próprias emoções, vença a ansiedade e se encontre. </p>
 
         <div class="flex flex-col sm:flex-row gap-3 pt-2">
           <button @click="scrollTo('contato')"
