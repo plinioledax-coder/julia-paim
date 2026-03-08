@@ -95,7 +95,7 @@ O objetivo não é apenas resolver o que incomoda agora, mas construir ferrament
                         </div>
                         <div class="flex items-start gap-3 text-left">
                             <CheckCircle2 class="w-5 h-5 text-brand-accent shrink-0 mt-0.5" />
-                            <p class="text-sm font-medium text-brand-dark/80">Desenvolver autonomia e resolução de problemas.</p>
+                            <p class="text-sm font-medium text-brand-dark/80">Fortalecer a autoestima e a confiança nas próprias capacidades.</p>
                         </div>
                         <div class="flex items-start gap-3 text-left">
                             <CheckCircle2 class="w-5 h-5 text-brand-accent shrink-0 mt-0.5" />
@@ -104,10 +104,6 @@ O objetivo não é apenas resolver o que incomoda agora, mas construir ferrament
                         <div class="flex items-start gap-3 text-left">
                             <CheckCircle2 class="w-5 h-5 text-brand-accent shrink-0 mt-0.5" />
                             <p class="text-sm font-medium text-brand-dark/80">Construir estratégias práticas para lidar com situações desafiadoras.</p>
-                        </div>
-                        <div class="flex items-start gap-3 text-left">
-                            <CheckCircle2 class="w-5 h-5 text-brand-accent shrink-0 mt-0.5" />
-                            <p class="text-sm font-medium text-brand-dark/80">Ampliar o repertório emocional e social.</p>
                         </div>
                         <div class="flex items-start gap-3 text-left">
                             <CheckCircle2 class="w-5 h-5 text-brand-accent shrink-0 mt-0.5" />
