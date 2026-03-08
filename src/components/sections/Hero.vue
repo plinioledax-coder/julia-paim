@@ -53,9 +53,9 @@ onUnmounted(() => window.removeEventListener('mousemove', handleMouseMove))
         </div>
 
         <h1 class="font-display text-4xl lg:text-5xl font-bold leading-[1.1] text-brand-dark tracking-tight">
-          Ajudando mentes <br class="hidden md:block"> brilhantes a se
+          Cuidado, afeto e ciência <br class="hidden md:block"> em cada
           <span class="relative inline-block text-brand-primary">
-            encontrarem.
+            encontro.
             <svg class="absolute w-[105%] h-3 -bottom-1 -left-1 text-brand-accent -z-10 opacity-60" viewBox="0 0 100 10"
               preserveAspectRatio="none">
               <path d="M0 5 Q 50 10 100 5" stroke="currentColor" stroke-width="6" fill="none" stroke-linecap="round" />
