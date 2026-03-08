@@ -64,7 +64,7 @@ onUnmounted(() => window.removeEventListener('mousemove', handleMouseMove))
         </h1>
 
         <p class="font-body text-base lg:text-lg text-brand-dark/70 font-medium leading-relaxed max-w-lg">
-          Um espaço onde o afeto e a ciência caminham juntos — para que seu filho entenda as próprias emoções, vença a ansiedade e se encontre. </p>
+          Um espaço seguro e acolhedor para que seu filho desenvolva habilidades emocionais e comportamentais de forma saudável. </p>
 
         <div class="flex flex-col sm:flex-row gap-3 pt-2">
           <button @click="scrollTo('contato')"
