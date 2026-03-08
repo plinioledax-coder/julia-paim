@@ -9,7 +9,7 @@ const profile = {
         'Oi! Eu sou Júlia. Acredito que cuidar de uma criança ou adolescente vai muito além de técnicas — é sobre criar um espaço seguro onde ele possa ser exatamente quem é.',
         // NOVO PARÁGRAFO SOBRE TCC:
         'Sou especialista em Terapia Cognitivo-Comportamental (TCC) para crianças e adolescentes, uma abordagem prática e baseada em evidências. Nossas sessões são dinâmicas: usamos jogos, desenhos e desafios do dia a dia para ajudar seu filho a entender como os pensamentos influenciam o que ele sente — e o que pode fazer diferente.',
-        'Para os pais, ofereço orientação clara e acolhedora. Para as crianças e teens, um lugar sem julgamentos para falar sobre escola, amigos, medos e tudo que pesa.'
+        'Para os pais, ofereço orientação clara e acolhedora. Para as crianças e adolescentes, um lugar sem julgamentos para falar sobre escola, amigos, medos e tudo que pesa.'
     ],
     quote: 'Crescer pode ser difícil. Mas com apoio, fica mais leve.',
     specialties: ['Ansiedade', 'Timidez', 'Vício em Telas', 'Autoestima', 'Conflitos Familiares', 'Mudanças de Comportamento', 'Problemas Emocionais e Sociais'],
